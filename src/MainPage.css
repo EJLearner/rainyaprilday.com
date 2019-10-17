@@ -1,0 +1,13 @@
+.background-full-height-hack-outer {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 52.1%; /* h/w ratio */
+  position: relative;
+}
+
+.background-full-height-hack-inner {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
