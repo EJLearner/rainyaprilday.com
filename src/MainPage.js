@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import mainPicture from "./assets/main-picture.png";
 
 import "./MainPage.css";
@@ -10,11 +11,11 @@ function MainPage() {
     <div className="background-full-height-hack-outer" style={backgroundStyle}>
       <div className="background-full-height-hack-inner">
         <div className="top-links">
-          <div>Rainy April Day Productions</div>
-          <div>Synopsis</div>
-          <div>Filmmakers</div>
-          <div>Donate</div>
-          <div>Contact</div>
+          <Link>Rainy April Day Productions</Link>
+          <Link>Synopsis</Link>
+          <Link>Filmmakers</Link>
+          <Link>Donate</Link>
+          <Link>Contact</Link>
         </div>
       </div>
     </div>
