@@ -33,3 +33,29 @@
 .top-links a:hover {
   text-decoration: underline;
 }
+
+.trailer-link-area {
+  color: white;
+  margin-left: 64px;
+  margin-bottom: 64px;
+  position: absolute;
+  bottom: 0;
+}
+
+.trailer-link-area .watch-trailer-here {
+  text-transform: uppercase;
+}
+
+.trailer-link-area .blurred-title {
+  display: inline-block;
+  font-family: "Jomolhari", serif;
+  font-size: 40px;
+  text-shadow: 3px 1px 0px rgba(255, 255, 255, 0.6);
+}
+
+.trailer-link-area img {
+  display: inline-block;
+  margin-left: 8px;
+  vertical-align: text-bottom;
+  width: 48px;
+}
