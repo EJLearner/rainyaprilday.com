@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import mainPicture from "./assets/main-picture.png";
 import playIcon from "./assets/play-button.png";
 
@@ -14,11 +14,11 @@ function MainPage() {
       <div className="background-full-height-hack-outer" style={backgroundStyle}>
         <div className="background-full-height-hack-inner">
           <div className="top-links">
-            <Link to={routePaths.ABOUT_RADP}>Rainy April Day Productions</Link>
-            <Link to={routePaths.SYNOPSIS}>Synopsis</Link>
-            <Link to={routePaths.FILMMAKERS}>Filmmakers</Link>
-            <Link to={routePaths.DONATE}>Donate</Link>
-            <Link to={routePaths.CONTACT}>Contact</Link>
+            <NavLink to={routePaths.ABOUT_RADP}>Rainy April Day Productions</NavLink>
+            <NavLink to={routePaths.SYNOPSIS}>Synopsis</NavLink>
+            <NavLink to={routePaths.FILMMAKERS}>Filmmakers</NavLink>
+            <NavLink to={routePaths.DONATE}>Donate</NavLink>
+            <NavLink to={routePaths.CONTACT}>Contact</NavLink>
           </div>
           <Link>
             <div className="trailer-link-area">

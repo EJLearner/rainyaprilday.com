@@ -21,3 +21,7 @@
 .about-and-other-links a:hover {
   text-decoration: underline;
 }
+
+.current-page-link {
+  font-weight: bolder;
+}
