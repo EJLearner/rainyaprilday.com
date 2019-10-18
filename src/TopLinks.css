@@ -1,0 +1,23 @@
+.about-and-other-links {
+  justify-content: end;
+  margin-top: 32px;
+  margin-right: 96px;
+  display: flex;
+}
+
+.about-and-other-links a {
+  color: black;
+  text-decoration: none;
+}
+
+.about-and-other-links > div {
+  margin-left: 8px;
+}
+
+.about-and-other-links div:not(:first-child)::before {
+  content: "/ ";
+}
+
+.about-and-other-links a:hover {
+  text-decoration: underline;
+}
