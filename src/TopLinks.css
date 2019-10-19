@@ -1,27 +1,43 @@
-.about-and-other-links {
+.top-links {
+  text-transform: uppercase;
   justify-content: flex-end;
   margin-top: 32px;
   margin-right: 96px;
   display: flex;
 }
 
-.about-and-other-links a {
+.top-links a {
   color: black;
   text-decoration: none;
 }
 
-.about-and-other-links > div {
+.top-links > div {
   margin-left: 8px;
 }
 
-.about-and-other-links div:not(:first-child)::before {
+.top-links div:not(:first-child)::before {
   content: "/ ";
 }
 
-.about-and-other-links a:hover {
+.top-links a:hover {
   text-decoration: underline;
 }
 
 .current-page-link {
   font-weight: bolder;
+}
+
+.home-top-links {
+  color: white;
+  position: absolute;
+  right: 0;
+}
+
+.top-links.home-top-links div::before {
+  content: none;
+}
+
+.home-top-links a {
+  color: white;
+  margin-left: 2em;
 }

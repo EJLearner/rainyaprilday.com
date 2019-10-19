@@ -1,10 +1,10 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import mainPicture from "./assets/main-picture.png";
 import playIcon from "./assets/play-button.png";
 
 import "./MainPage.css";
-import routePaths from "./routePaths";
+import TopLinks from "./TopLinks";
 
 function MainPage() {
   const backgroundStyle = { backgroundImage: `url(${mainPicture})` };
@@ -14,13 +14,7 @@ function MainPage() {
   return (
     <div className="main-page-and-background" style={backgroundStyle}>
       <div className="gradient-mask">
-        <div className="top-links">
-          <NavLink to={routePaths.ABOUT_RADP}>Rainy April Day Productions</NavLink>
-          <NavLink to={routePaths.SYNOPSIS}>Synopsis</NavLink>
-          <NavLink to={routePaths.FILMMAKERS}>Filmmakers</NavLink>
-          <NavLink to={routePaths.DONATE}>Donate</NavLink>
-          <NavLink to={routePaths.CONTACT}>Contact</NavLink>
-        </div>
+        <TopLinks isHome />
         {trailerLink && (
           <Link to={trailerLink}>
             <div className="trailer-link-area">

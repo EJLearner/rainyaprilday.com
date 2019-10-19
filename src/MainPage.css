@@ -16,27 +16,6 @@ html {
   height: 100vh;
 }
 
-.top-links {
-  text-transform: uppercase;
-  color: white;
-  margin-top: 50px;
-  margin-right: 60px;
-  position: absolute;
-  right: 0;
-  display: flex;
-}
-
-.top-links a {
-  color: white;
-  text-decoration: none;
-  display: block;
-  margin-left: 35px;
-}
-
-.top-links a:hover {
-  text-decoration: underline;
-}
-
 .trailer-link-area {
   color: white;
   margin-left: 64px;

@@ -4,6 +4,9 @@ import "./Contact.css";
 import TopLinks from "./TopLinks";
 
 function Contact() {
+  let instagramInfo;
+  let facebookInfo;
+
   return (
     <>
       <TopLinks />
@@ -15,7 +18,19 @@ function Contact() {
         <br />
         Gwynn Oak, MD 21207
         <br />
-        <a href="mailto:aprild@rainyaprilday.com">AprilD@rainyaprilday.com</a>
+        {instagramInfo && (
+          <>
+            Instagram: ********
+            <br />
+          </>
+        )}
+        {facebookInfo && (
+          <>
+            Facebook: ********
+            <br />
+          </>
+        )}
+        <a href="mailto:aprild@rainyaprilday.com">aprild@rainyaprilday.com</a>
         <br />
       </div>
     </>
