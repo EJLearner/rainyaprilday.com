@@ -15,11 +15,11 @@ function TopLinks() {
 
   return (
     <div className="about-and-other-links">
-      {linksInfo.map(link => {
+      {linksInfo.map(({ label, path }) => {
         return (
           <div>
-            <NavLink activeClassName="current-page-link" to={link.path}>
-              {link.label}
+            <NavLink activeClassName="current-page-link" to={path}>
+              {label}
             </NavLink>
           </div>
         );

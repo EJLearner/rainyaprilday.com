@@ -1,5 +1,5 @@
 .about-and-other-links {
-  justify-content: end;
+  justify-content: flex-end;
   margin-top: 32px;
   margin-right: 96px;
   display: flex;

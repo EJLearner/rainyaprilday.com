@@ -9,6 +9,8 @@ import routePaths from "./routePaths";
 function MainPage() {
   const backgroundStyle = { backgroundImage: `url(${mainPicture})` };
 
+  let trailerLink;
+
   return (
     <>
       <div className="background-full-height-hack-outer" style={backgroundStyle}>
@@ -20,13 +22,15 @@ function MainPage() {
             <NavLink to={routePaths.DONATE}>Donate</NavLink>
             <NavLink to={routePaths.CONTACT}>Contact</NavLink>
           </div>
-          <Link>
-            <div className="trailer-link-area">
-              <div className="watch-trailer-here">Watch Trailer Here</div>
-              <div className="blurred-title">Tipsy</div>
-              <img className="play-icon" alt="play-icon" src={playIcon} />
-            </div>
-          </Link>
+          {trailerLink && (
+            <Link to={trailerLink}>
+              <div className="trailer-link-area">
+                <div className="watch-trailer-here">Watch Trailer Here</div>
+                <div className="blurred-title">Tipsy</div>
+                <img className="play-icon" alt="play-icon" src={playIcon} />
+              </div>
+            </Link>
+          )}
         </div>
       </div>
     </>
