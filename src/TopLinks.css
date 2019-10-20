@@ -23,8 +23,8 @@
   text-decoration: underline;
 }
 
-.current-page-link {
-  font-weight: bolder;
+a.current-page-link {
+  color: rgb(120, 120, 120);
 }
 
 .home-top-links {
