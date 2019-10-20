@@ -1,15 +1,10 @@
 import React from "react";
 
 import "./Synopsis.css";
-import TopLinks from "./TopLinks";
+import withPageWrapper from "./withPageWrapper";
 
 function Synopsis() {
-  return (
-    <>
-      <TopLinks />
-      Synopsis Info
-    </>
-  );
+  return <div>Synopsis Info</div>;
 }
 
-export default Synopsis;
+export default withPageWrapper(Synopsis);

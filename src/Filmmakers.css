@@ -1,0 +1,27 @@
+.info-and-interviews {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-and-bio {
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.filmmaker-name {
+  width: 20%;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.filmmaker-bio {
+  margin-left: 6em;
+  width: 50%;
+}
+
+.interviews-link {
+  flex-shrink: 0;
+  border: 1px solid black;
+  width: 300px;
+  height: 200px;
+}

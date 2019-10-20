@@ -1,15 +1,10 @@
 import React from "react";
 
 import "./Donate.css";
-import TopLinks from "./TopLinks";
+import withPageWrapper from "./withPageWrapper";
 
 function Donate() {
-  return (
-    <>
-      <TopLinks />
-      Donate Info
-    </>
-  );
+  return <>Donate Info</>;
 }
 
-export default Donate;
+export default withPageWrapper(Donate);

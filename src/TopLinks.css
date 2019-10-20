@@ -1,8 +1,7 @@
 .top-links {
   text-transform: uppercase;
   justify-content: flex-end;
-  margin-top: 32px;
-  margin-right: 96px;
+  margin: 32px 96px 32px 0;
   display: flex;
 }
 
