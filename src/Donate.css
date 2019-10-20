@@ -18,7 +18,8 @@
   text-transform: uppercase;
 }
 
-.set-amount-link {
+.set-amount-link,
+.other-amount a {
   background-color: rgb(6, 61, 113);
   color: white;
   padding: 0.8rem 3rem;
@@ -28,4 +29,20 @@
 
 .set-amount-link:not(:first-of-type) {
   margin-left: 1.5em;
+}
+
+.other-amount {
+  /* border: 2px solid rgb(6, 61, 113); */
+  display: inline-block;
+  margin-left: 1.5em;
+}
+
+.other-amount a {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+}
+
+.other-amount input {
+  border: 2px solid rgb(6, 61, 113);
+  height: 100%;
 }
