@@ -1,0 +1,31 @@
+.movie-picture {
+  width: 100%;
+}
+
+.first-sentence {
+  font-style: italic;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.title {
+  font-style: italic;
+}
+
+.gift-amount-title {
+  font-size: 1rem;
+  margin: 3rem 0 2rem 0;
+  text-transform: uppercase;
+}
+
+.set-amount-link {
+  background-color: rgb(6, 61, 113);
+  color: white;
+  padding: 0.8rem 3rem;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.set-amount-link:not(:first-of-type) {
+  margin-left: 1.5em;
+}
