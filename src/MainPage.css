@@ -2,6 +2,7 @@ body,
 html {
   color: #111;
   background-color: rgb(240, 240, 240);
+  height: 100%;
 }
 
 .main-page-and-background {
@@ -22,6 +23,10 @@ html {
   margin-bottom: 64px;
   position: absolute;
   bottom: 0;
+}
+
+.trailer-link-area:hover {
+  opacity: 0.9;
 }
 
 .trailer-link-area .watch-trailer-here {

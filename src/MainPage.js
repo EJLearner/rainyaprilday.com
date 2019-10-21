@@ -16,12 +16,10 @@ function MainPage() {
       <div className="gradient-mask">
         <TopLinks isHome />
         {trailerLink && (
-          <Link to={trailerLink}>
-            <div className="trailer-link-area">
-              <div className="watch-trailer-here">Watch Trailer Here</div>
-              <div className="blurred-title">Tipsy</div>
-              <img className="play-icon" alt="play-icon" src={playIcon} />
-            </div>
+          <Link className="trailer-link-area" to={trailerLink}>
+            <div className="watch-trailer-here">Watch Trailer Here</div>
+            <div className="blurred-title">Tipsy</div>
+            <img className="play-icon" alt="play-icon" src={playIcon} />
           </Link>
         )}
       </div>

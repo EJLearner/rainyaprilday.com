@@ -18,7 +18,7 @@ function renderSetAmounts() {
   const otherAmount = (
     <div className="other-amount">
       <a href="">$</a>
-      <input type="text" placeholder="Other" />
+      <input type="text" placeholder="Other" size="8" />
     </div>
   );
 

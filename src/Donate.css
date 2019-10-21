@@ -12,14 +12,18 @@
   font-style: italic;
 }
 
+.gift-amount-choicss {
+  display: flex;
+  flex-direction: row;
+}
+
 .gift-amount-title {
   font-size: 1rem;
   margin: 3rem 0 2rem 0;
   text-transform: uppercase;
 }
 
-.set-amount-link,
-.other-amount a {
+.gift-amount-choices a {
   background-color: rgb(6, 61, 113);
   color: white;
   padding: 0.8rem 3rem;
@@ -27,14 +31,25 @@
   font-weight: 400;
 }
 
+.gift-amount-choices a:hover {
+  opacity: 0.9;
+}
+
+.gift-amount-choices a:focus {
+  outline-color: black;
+  outline-width: 2px;
+}
+
 .set-amount-link:not(:first-of-type) {
   margin-left: 1.5em;
 }
 
 .other-amount {
-  /* border: 2px solid rgb(6, 61, 113); */
+  background-color: rgb(6, 61, 113);
   display: inline-block;
   margin-left: 1.5em;
+  padding-right: 1em;
+  height: 100%;
 }
 
 .other-amount a {
@@ -43,6 +58,6 @@
 }
 
 .other-amount input {
-  border: 2px solid rgb(6, 61, 113);
-  height: 100%;
+  line-height: 140%;
+  font-size: 100%;
 }
