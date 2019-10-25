@@ -12,23 +12,33 @@
   font-style: italic;
 }
 
-.gift-amount-choicss {
+.gift-amount-choices {
   display: flex;
-  flex-direction: row;
+  margin-top: 2rem;
 }
 
 .gift-amount-title {
   font-size: 1rem;
-  margin: 3rem 0 2rem 0;
+  margin: 2rem 0 0 0;
   text-transform: uppercase;
 }
 
+#error-message {
+  color: red;
+  font-weight: bold;
+}
+
 .gift-amount-choices a {
+  display: inline-block;
   background-color: rgb(6, 61, 113);
   color: white;
-  padding: 0.8rem 3rem;
+  flex-grow: 1;
+  min-width: 50px;
+  max-width: 120px;
+  padding: 0.8rem 0;
   text-decoration: none;
   font-weight: 400;
+  text-align: center;
 }
 
 .gift-amount-choices a:hover {
@@ -46,18 +56,30 @@
 
 .other-amount {
   background-color: rgb(6, 61, 113);
+  cursor: pointer;
   display: inline-block;
+  min-width: 125px;
   margin-left: 1.5em;
-  padding-right: 1em;
+  padding-right: 0.5em;
   height: 100%;
 }
 
 .other-amount a {
+  background-color: rgb(6, 61, 113);
   display: inline-block;
-  padding: 0.8rem 1.5rem;
+  padding: 0.8rem 0.5em;
+  min-width: 1em;
+}
+
+.other-amount a:hover {
+  background-color: rgb(6, 92, 113);
 }
 
 .other-amount input {
   line-height: 140%;
   font-size: 100%;
+}
+
+.other-amount input.error-input {
+  background-color: red;
 }
