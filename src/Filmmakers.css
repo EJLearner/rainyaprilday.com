@@ -8,8 +8,19 @@
   margin-bottom: 2em;
 }
 
+.name-and-bio .headshot-and-name {
+  position: relative;
+}
+
+.name-and-bio img {
+  width: 300px;
+  height: auto;
+}
+
 .filmmaker-name {
-  width: 20%;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
   font-size: 1.5em;
   font-weight: 600;
 }

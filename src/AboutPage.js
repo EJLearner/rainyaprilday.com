@@ -5,7 +5,7 @@ import withPageWrapper from "./withPageWrapper";
 
 function AboutPage() {
   return (
-    <div className="about-paragraph">
+    <p className="about-paragraph">
       <p>
         Founded in 2019 by April Day, Rainy April Day Productions aspires to have fun telling stories we find
         entertaining and thought-provoking without pretense or pretention. Our company is committed to developing
@@ -15,9 +15,15 @@ function AboutPage() {
         the belief that even the most ordinary experiences can become unique and powerful stories when told from our
         diverse perspectives.
       </p>
-      <p>Founder/CEO=April Day</p>
-      <p>President=Earl Jones</p>
-    </div>
+      <div className="person">
+        <p className="title">Founder and CEO</p>
+        <p className="name">April Day</p>
+      </div>
+      <div className="person">
+        <p className="title">President</p>
+        <p className="name">Earl Jones</p>
+      </div>
+    </p>
   );
 }
 

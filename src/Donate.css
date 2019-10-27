@@ -2,13 +2,13 @@
   width: 100%;
 }
 
-.first-sentence {
+.donation-message .first-sentence {
   font-style: italic;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.title {
+.donation-message .title {
   font-style: italic;
 }
 

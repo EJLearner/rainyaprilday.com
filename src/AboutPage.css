@@ -1,3 +1,8 @@
-.about-paragraph {
-  color: rgb(49, 132, 155);
+.about-paragraph .person {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.about-paragraph .person p {
+  margin: 0.1em;
 }
