@@ -28,7 +28,7 @@ function TopLinks(props) {
     { path: routePaths.ABOUT_RADP, label: "Rainy April Day Productions" },
     { path: routePaths.FILMMAKERS, label: "Filmmakers" },
     { path: routePaths.SYNOPSIS, label: "Synopsis" },
-    { path: routePaths.DONATE, label: "Donate" },
+    // { path: routePaths.DONATE, label: "Donate" },
     { path: routePaths.CONTACT, label: "Contact" }
   ];
 
