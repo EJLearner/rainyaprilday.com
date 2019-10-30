@@ -4,8 +4,28 @@
 }
 
 .interviews-link {
+  display: block;
+  position: relative;
   flex-shrink: 0;
   border: 1px solid black;
   width: 300px;
-  height: 200px;
+}
+
+.interviews-link img.movie-still {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.interviews-link img.play-icon {
+  display: block;
+  width: 20px;
+
+  /* centering the icon */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }

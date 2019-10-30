@@ -6,6 +6,8 @@ import withPageWrapper from "./withPageWrapper";
 import aprilHeadshot from "./assets/april-headshot.jpg";
 import jaiHeadshot from "./assets/jai-headshot.jpg";
 import sholaHeadshot from "./assets/shola-headshot.jpg";
+import movieStill from "./assets/movie-still.png";
+import playIcon from "./assets/play-icon.png";
 import Filmmaker from "./Filmmaker";
 
 function FilmmakersPage() {
@@ -62,7 +64,12 @@ function FilmmakersPage() {
           </p>
         </Filmmaker>
       </div>
-      <div className="interviews-link"></div>
+      <div>
+        <a href="" className="interviews-link">
+          <img alt="movie scene still" className="movie-still" src={movieStill} />
+          <img alt="play movie" className="play-icon" src={playIcon} />
+        </a>
+      </div>
     </div>
   );
 }
