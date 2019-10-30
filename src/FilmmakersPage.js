@@ -65,10 +65,17 @@ function FilmmakersPage() {
         </Filmmaker>
       </div>
       <div>
-        <a href="" className="interviews-link">
-          <img alt="movie scene still" className="movie-still" src={movieStill} />
-          <img alt="play movie" className="play-icon" src={playIcon} />
-        </a>
+        <iframe
+          src="https://player.vimeo.com/video/368597135"
+          width="400"
+          height="360"
+          frameborder="0"
+          allow="autoplay; fullscreen"
+          webkitallowfullscreen
+          mozallowfullscreen
+          allowfullscreen
+          title="Filmmakers Interview Video"
+        ></iframe>
       </div>
     </div>
   );
