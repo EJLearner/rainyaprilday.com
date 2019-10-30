@@ -71,9 +71,9 @@ function FilmmakersPage() {
           height="360"
           frameborder="0"
           allow="autoplay; fullscreen"
-          webkitallowfullscreen
-          mozallowfullscreen
-          allowfullscreen
+          webkitallowfullscreen="true"
+          mozallowfullscreen="true"
+          allowfullscreen="true"
           title="Filmmakers Interview Video"
         ></iframe>
       </div>
