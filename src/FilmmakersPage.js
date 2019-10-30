@@ -64,7 +64,7 @@ function FilmmakersPage() {
           </p>
         </Filmmaker>
       </div>
-      <div>
+      <div className="embedded-video">
         <iframe
           src="https://player.vimeo.com/video/368597135"
           width="400"
