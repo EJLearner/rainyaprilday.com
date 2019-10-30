@@ -6,12 +6,13 @@ import withPageWrapper from "./withPageWrapper";
 function Synopsis() {
   return (
     <div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores soluta magni nemo doloribus, accusantium nobis
-      doloremque earum iusto ab impedit iste tenetur adipisci id. Aspernatur minus commodi tempore iure tenetur?</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores soluta magni nemo doloribus, accusantium nobis
-      doloremque earum iusto ab impedit iste tenetur adipisci id. Aspernatur minus commodi tempore iure tenetur?</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores soluta magni nemo doloribus, accusantium nobis
-      doloremque earum iusto ab impedit iste tenetur adipisci id. Aspernatur minus commodi tempore iure tenetur?</p>
+      <p>
+        High school teacher Shawna is young, carefree, and fun. She likes to go out and party on the weekends with her
+        friends and hookup with men in a drunken haze of one-night stands. When she gets a threatening note to not say
+        no to a former lover intent on having her to himself, she dismisses it as a prank by one of her students. But
+        soon the threats intensify and strike closer to home. The clock is ticking for Shawna learn her stalkers
+        identity before it’s too late.
+      </p>
     </div>
   );
 }
