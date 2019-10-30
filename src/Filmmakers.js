@@ -11,7 +11,7 @@ function Filmmakers() {
       <div className="info-and-interviews">
         <div className="filmmakers-info">
           <div className="name-and-bio">
-            <div>
+            <div className="headshot-and-name-column">
               <div className="headshot-and-name">
                 <img alt="April Day" src={aprilHeadshot} />
                 <div className="filmmaker-name">April Day</div>
@@ -32,7 +32,7 @@ function Filmmakers() {
             </div>
           </div>
           <div className="name-and-bio">
-            <div>
+            <div className="headshot-and-name-column">
               <div className="headshot-and-name">
                 <img alt="Shola Ajayi" src={aprilHeadshot} />
                 <div className="filmmaker-name">Shola Ajayi</div>
@@ -59,7 +59,7 @@ function Filmmakers() {
             </div>
           </div>
           <div className="name-and-bio">
-            <div>
+            <div className="headshot-and-name-column">
               <div className="headshot-and-name">
                 <img alt="Jai Rice" src={aprilHeadshot} />
                 <div className="filmmaker-name">Jai Rice</div>

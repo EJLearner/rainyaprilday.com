@@ -8,12 +8,17 @@
   margin-bottom: 2em;
 }
 
+.headshot-and-name-column {
+  width: 40%;
+  max-width: 600px;
+}
+
 .name-and-bio .headshot-and-name {
   position: relative;
 }
 
 .name-and-bio img {
-  width: 300px;
+  width: 100%;
   height: auto;
 }
 
