@@ -6,8 +6,6 @@ import withPageWrapper from "./withPageWrapper";
 import aprilHeadshot from "./assets/april-headshot.jpg";
 import jaiHeadshot from "./assets/jai-headshot.jpg";
 import sholaHeadshot from "./assets/shola-headshot.jpg";
-import movieStill from "./assets/movie-still.png";
-import playIcon from "./assets/play-icon.png";
 import Filmmaker from "./Filmmaker";
 
 function FilmmakersPage() {

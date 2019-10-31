@@ -6,3 +6,11 @@
   font-size: 140%;
   line-height: 130%;
 }
+
+.site-logo {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  width: 100px;
+  height: auto;
+}
