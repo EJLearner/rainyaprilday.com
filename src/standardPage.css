@@ -1,16 +1,17 @@
 .standard-page {
-  color: rgb(88, 88, 88);
+  color: rgb(50, 50, 50);
   letter-spacing: 0.2px;
+  margin-top: 5em;
   padding: 0 2em 4em 4em;
-  font-family: Big Shoulders Text, Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 140%;
-  line-height: 130%;
+  font-family: "Slabo 27px", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 110%;
+  line-height: 150%;
+  position: relative;
 }
 
 .site-logo {
   position: absolute;
-  left: 25px;
-  top: 25px;
-  width: 100px;
+  top: -120px;
+  width: 80px;
   height: auto;
 }

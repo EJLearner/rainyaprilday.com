@@ -6,3 +6,7 @@
 .about-paragraph .person p {
   margin: 0.1em;
 }
+
+.about-paragraph .title {
+  font-weight: bolder;
+}

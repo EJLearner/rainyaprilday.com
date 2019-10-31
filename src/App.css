@@ -6,3 +6,7 @@
   margin: auto;
   max-width: 1200px;
 }
+
+.accent-text {
+  color: rgb(6, 92, 113);
+}

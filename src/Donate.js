@@ -50,7 +50,7 @@ class Donate extends React.Component {
 
     return (
       <div className="other-amount">
-        <a href="" title={linkTitle} onClick={event => this.onOtherAmountClick(event)}>
+        <a href="https://squareup.com/" title={linkTitle} onClick={event => this.onOtherAmountClick(event)}>
           $
         </a>
         <input
@@ -75,7 +75,7 @@ class Donate extends React.Component {
       const amountString = `$${amount}`;
 
       return (
-        <a className="set-amount-link" href="" key={amount} title={`Donate ${amountString}`}>
+        <a className="set-amount-link" href="https://squareup.com/" key={amount} title={`Donate ${amountString}`}>
           {amountString}
         </a>
       );

@@ -66,7 +66,7 @@ function FilmmakersPage() {
         <iframe
           src="https://player.vimeo.com/video/368597135"
           width="400"
-          height="360"
+          height="220"
           frameborder="0"
           allow="autoplay; fullscreen"
           webkitallowfullscreen="true"
@@ -74,6 +74,7 @@ function FilmmakersPage() {
           allowfullscreen="true"
           title="Filmmakers Interview Video"
         ></iframe>
+        <div className="interviews-caption accent-text">Filmmaker Interviews</div>
       </div>
     </div>
   );

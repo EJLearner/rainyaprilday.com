@@ -9,6 +9,7 @@
 }
 
 .name-and-bio .headshot-and-name {
+  color: white;
   position: relative;
 }
 
@@ -19,7 +20,7 @@
 }
 
 .behind-text-mask {
-  background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.95) 100%);
+  background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.95) 100%);
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -28,11 +29,12 @@
 
 .filmmaker-name {
   position: absolute;
-  color: rgb(60, 60, 60);
+  color: white;
   bottom: 15px;
   left: 15px;
-  font-size: 1.5em;
+  font-size: 110%;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .filmmaker-bio {

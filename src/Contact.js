@@ -9,7 +9,7 @@ function Contact() {
 
   return (
     <div className="contact-page">
-      <h1>Contact</h1>
+      <h1 className="accent-text">Contact</h1>
       Rainy April Day Productions
       <br />
       PO Box 26602

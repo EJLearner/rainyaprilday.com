@@ -8,9 +8,9 @@ function withPageWrapper(WrappedComponent) {
   return function(props) {
     return (
       <>
-        <img alt="Site Logo" className="site-logo" src={rainyAprilDayLogo} />
         <TopLinks />
         <div className="standard-page">
+          <img alt="Site Logo" className="site-logo" src={rainyAprilDayLogo} />
           <WrappedComponent {...props} />
         </div>
       </>

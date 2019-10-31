@@ -1,0 +1,8 @@
+.synopsis-title {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.synopsis-title .title {
+  font-style: italic;
+}
