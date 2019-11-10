@@ -3,7 +3,7 @@ import mainPicture from "./assets/main-picture.png";
 import playIcon from "./assets/play-button.png";
 
 import "./MainPage.css";
-import TopLinks from "./TopLinks";
+import TopLinks from "./TopLinks.tsx";
 
 function MainPage() {
   const backgroundStyle = { backgroundImage: `url(${mainPicture})` };

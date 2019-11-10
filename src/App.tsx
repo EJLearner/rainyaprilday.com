@@ -7,7 +7,7 @@ import Contact from "./Contact";
 
 import "./App.css";
 import routePaths from "./routePaths";
-import Donate from "./Donate";
+import Donate from "./Donate.tsx";
 import FilmmakersPage from "./FilmmakersPage";
 import Synopsis from "./Synopsis";
 
