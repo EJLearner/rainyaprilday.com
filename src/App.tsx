@@ -1,15 +1,15 @@
-import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import React from 'react';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
-import MainPage from "./MainPage";
-import AboutPage from "./AboutPage";
-import Contact from "./Contact";
+import MainPage from './MainPage';
+import AboutPage from './AboutPage';
+import Contact from './Contact';
 
-import "./App.css";
-import routePaths from "./routePaths";
-import Donate from "./Donate.tsx";
-import FilmmakersPage from "./FilmmakersPage";
-import Synopsis from "./Synopsis";
+import './App.css';
+import routePaths from './routePaths';
+import Donate from './Donate.tsx';
+import FilmmakersPage from './FilmmakersPage';
+import Synopsis from './Synopsis';
 
 function App() {
   return (

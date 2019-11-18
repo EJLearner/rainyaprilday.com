@@ -1,32 +1,41 @@
-import React from "react";
+import React from 'react';
 
-import "./Donate.css";
-import withPageWrapper from "./withPageWrapper";
-import officersPicture from "./assets/officers-shot.png";
+import './Donate.css';
+import withPageWrapper from './withPageWrapper';
+import officersPicture from './assets/officers-shot.png';
+import superagent from 'superagent';
 
-const SELECT_AMOUNT_ID = "select-amount";
-const ERROR_ID = "error-message";
+const SELECT_AMOUNT_ID = 'select-amount';
+const ERROR_ID = 'error-message';
+
+const getUrl = amount => {
+  console.log('inside geturl');
+  return superagent
+    .post(`http://rainyaprildaylocal/square.php?amount=${amount}`)
+    .then(console.log)
+    .catch(err => console.log(err));
+};
 
 class Donate extends React.Component {
-  state = { otherAmount: "" };
+  state = {otherAmount: '', errorMessage: ''};
 
-  validateOtherAmount(value) {
+  validateOtherAmount(value: string) {
     const validDollarAmount = /^(\d+)?(\.(\d{2})?)?$/;
 
     if (!value.match(validDollarAmount)) {
-      this.setState({ errorMessage: "Other amount must be a valid dollar amount." });
+      this.setState({errorMessage: 'Other amount must be a valid dollar amount.'});
       return false;
     } else if (value && Number(value) < 5) {
-      this.setState({ errorMessage: "Other amount must be at least $5" });
+      this.setState({errorMessage: 'Other amount must be at least $5'});
       return false;
     }
 
-    this.setState({ errorMessage: "" });
+    this.setState({errorMessage: ''});
     return true;
   }
 
   onOtherAmountClick(event) {
-    const { otherAmount, errorMessage } = this.state;
+    const {otherAmount, errorMessage} = this.state;
 
     if (errorMessage) {
       alert(errorMessage);
@@ -34,34 +43,37 @@ class Donate extends React.Component {
     }
 
     if (!otherAmount) {
-      alert("No amount was entered");
+      alert('No amount was entered');
       event && event.preventDefault();
     }
+
+    const url = getUrl(otherAmount);
+    console.log(url);
   }
 
   renderOtherAmount() {
-    const { errorMessage, otherAmount } = this.state;
+    const {errorMessage, otherAmount} = this.state;
     const hasError = Boolean(errorMessage);
-    const labelledBy = [SELECT_AMOUNT_ID, hasError && ERROR_ID].filter(id => id).join(" ");
+    const labelledBy = [SELECT_AMOUNT_ID, hasError && ERROR_ID].filter(id => id).join(' ');
 
-    const donateAmountForLinkTitle = otherAmount ? `$${otherAmount}` : "custom amount";
+    const donateAmountForLinkTitle = otherAmount ? `$${otherAmount}` : 'custom amount';
 
     const linkTitle = `Donate ${donateAmountForLinkTitle}`;
 
     return (
       <div className="other-amount">
-        <a href="https://squareup.com/" title={linkTitle} onClick={event => this.onOtherAmountClick(event)}>
+        <a href="https://squareup.com/" onClick={event => this.onOtherAmountClick(event)} title={linkTitle}>
           $
         </a>
         <input
           aria-invalid={hasError}
           aria-labelledby={labelledBy}
-          className={hasError ? "error-input" : undefined}
+          className={hasError ? 'error-input' : undefined}
           onBlur={event => this.validateOtherAmount(event.target.value)}
-          onChange={event => this.setState({ otherAmount: event.target.value })}
-          type="text"
+          onChange={event => this.setState({otherAmount: event.target.value})}
           placeholder="Other"
-          size="8"
+          size={8}
+          type="text"
           value={otherAmount}
         />
       </div>
@@ -75,7 +87,17 @@ class Donate extends React.Component {
       const amountString = `$${amount}`;
 
       return (
-        <a className="set-amount-link" href="https://squareup.com/" key={amount} title={`Donate ${amountString}`}>
+        <a
+          className="set-amount-link"
+          href="https://squareup.com/"
+          key={amount}
+          onClick={event => {
+            console.log('in onclick');
+            getUrl(amount);
+            event.preventDefault();
+          }}
+          title={`Donate ${amountString}`}
+        >
           {amountString}
         </a>
       );
@@ -87,7 +109,7 @@ class Donate extends React.Component {
   }
 
   render() {
-    const { errorMessage } = this.state;
+    const {errorMessage} = this.state;
 
     return (
       <>
@@ -100,7 +122,7 @@ class Donate extends React.Component {
           various film festivals.
         </p>
 
-        <h2 id={SELECT_AMOUNT_ID} className="gift-amount-title">
+        <h2 className="gift-amount-title" id={SELECT_AMOUNT_ID}>
           Select your gift amount:
         </h2>
         {errorMessage && (
