@@ -1,0 +1,17 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": ["plugin:@typescript-eslint/recommended", "react-app"],
+  "plugins": ["@typescript-eslint", "react"],
+  "rules": {
+    "no-useless-computed-key": "error",
+    "object-curly-spacing": "error",
+    "prefer-template": "error",
+    "quotes": ["error", "single"],
+    "react/jsx-sort-props": "error",
+    "react/sort-prop-types": "error",
+    "react/sort-comp": "error",
+    "react/prop-types": "error",
+    "react/no-unused-prop-types": "error",
+    "semi": "error"
+  }
+}
