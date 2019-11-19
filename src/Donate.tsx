@@ -8,50 +8,52 @@ import superagent from 'superagent';
 const SELECT_AMOUNT_ID = 'select-amount';
 const ERROR_ID = 'error-message';
 
-const getUrl = amount => {
-  console.log('inside geturl');
-  return superagent
-    .post(`http://rainyaprildaylocal/square.php?amount=${amount}`)
-    .then(console.log)
-    .catch(err => console.log(err));
+const getUrl = (amount, event): Function => {
+  const newWindow = window.open();
+  event.preventDefault();
+
+  return superagent.post(`http://rainyaprildaylocal/square.php?amount=${amount}`).end((err: object, res: object) => {
+    if (err) {
+      this.setState({postError: err});
+    }
+
+    newWindow.location.replace(res.text);
+  });
 };
 
 class Donate extends React.Component {
   state = {otherAmount: '', errorMessage: ''};
 
-  validateOtherAmount(value: string) {
+  validateOtherAmount(value: string): void {
     const validDollarAmount = /^(\d+)?(\.(\d{2})?)?$/;
 
     if (!value.match(validDollarAmount)) {
       this.setState({errorMessage: 'Other amount must be a valid dollar amount.'});
-      return false;
-    } else if (value && Number(value) < 5) {
+      return;
+    }
+
+    if (value && Number(value) < 5) {
       this.setState({errorMessage: 'Other amount must be at least $5'});
-      return false;
+      return;
     }
 
     this.setState({errorMessage: ''});
-    return true;
+    return;
   }
 
-  onOtherAmountClick(event) {
+  onOtherAmountClick(event): void {
     const {otherAmount, errorMessage} = this.state;
 
     if (errorMessage) {
       alert(errorMessage);
-      event && event.preventDefault();
-    }
-
-    if (!otherAmount) {
+    } else if (!otherAmount) {
       alert('No amount was entered');
-      event && event.preventDefault();
+    } else {
+      getUrl(otherAmount, event);
     }
-
-    const url = getUrl(otherAmount);
-    console.log(url);
   }
 
-  renderOtherAmount() {
+  renderOtherAmount(): object {
     const {errorMessage, otherAmount} = this.state;
     const hasError = Boolean(errorMessage);
     const labelledBy = [SELECT_AMOUNT_ID, hasError && ERROR_ID].filter(id => id).join(' ');
@@ -61,16 +63,16 @@ class Donate extends React.Component {
     const linkTitle = `Donate ${donateAmountForLinkTitle}`;
 
     return (
-      <div className="other-amount">
-        <a href="https://squareup.com/" onClick={event => this.onOtherAmountClick(event)} title={linkTitle}>
+      <div className="other-amount" key="other">
+        <a href="https://squareup.com/" onClick={(event): void => this.onOtherAmountClick(event)} title={linkTitle}>
           $
         </a>
         <input
           aria-invalid={hasError}
           aria-labelledby={labelledBy}
           className={hasError ? 'error-input' : undefined}
-          onBlur={event => this.validateOtherAmount(event.target.value)}
-          onChange={event => this.setState({otherAmount: event.target.value})}
+          onBlur={(event): void => this.validateOtherAmount(event.target.value)}
+          onChange={(event): void => this.setState({otherAmount: event.target.value})}
           placeholder="Other"
           size={8}
           type="text"
@@ -80,10 +82,10 @@ class Donate extends React.Component {
     );
   }
 
-  renderSetAmounts() {
+  renderSetAmounts(): object {
     const amounts = [50, 100, 250, 500, 1000];
 
-    const renderedSetAmounts = amounts.map(amount => {
+    const renderedSetAmounts = amounts.map((amount): object => {
       const amountString = `$${amount}`;
 
       return (
@@ -91,11 +93,7 @@ class Donate extends React.Component {
           className="set-amount-link"
           href="https://squareup.com/"
           key={amount}
-          onClick={event => {
-            console.log('in onclick');
-            getUrl(amount);
-            event.preventDefault();
-          }}
+          onClick={(event): Function => getUrl(amount, event)}
           title={`Donate ${amountString}`}
         >
           {amountString}
@@ -108,7 +106,7 @@ class Donate extends React.Component {
     return renderedSetAmounts;
   }
 
-  render() {
+  render(): object {
     const {errorMessage} = this.state;
 
     return (
