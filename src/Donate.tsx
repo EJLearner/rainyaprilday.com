@@ -4,6 +4,8 @@ import './Donate.css';
 import withPageWrapper from './withPageWrapper';
 import officersPicture from './assets/officers-shot.png';
 import superagent from 'superagent';
+import constants from './utils/constants';
+const {NBSP} = constants;
 
 const SELECT_AMOUNT_ID = 'select-amount';
 const ERROR_ID = 'error-message';
@@ -113,11 +115,12 @@ class Donate extends React.Component {
       <>
         <img alt="Officers Carr and Holden movie scene" className="movie-picture" src={officersPicture} />
         <p className="donation-message">
-          <span className="first-sentence">What am I donating to?</span> The filmmakers are raising money to film the
-          entire feature film <span className="title">Tipsy</span>. Shooting is scheduled to begin early October 2020
-          and wrap late November 2020. All donations will go toward pre-production, production, and post production
-          costs associated with completing the feature film. Remaining proceeds will be used to cover entrance fees to
-          various film festivals.
+          <span className="first-sentence">What am I donating to?</span>
+          {NBSP}
+          {NBSP}The filmmakers are raising money to film the entire feature film <span className="title">Tipsy</span>.
+          Shooting is scheduled to begin early October 2020 and wrap late November 2020. All donations will go toward
+          pre-production, production, and post production costs associated with completing the feature film. Remaining
+          proceeds will be used to cover entrance fees to various film festivals.
         </p>
 
         <h2 className="gift-amount-title" id={SELECT_AMOUNT_ID}>
