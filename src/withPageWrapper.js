@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import TopLinks from "./TopLinks.tsx";
-import rainyAprilDayLogo from "./assets/rainy-april-day-logo.png";
-import "./standardPage.css";
+import TopLinks from './TopLinks.tsx';
+import rainyAprilDayLogo from './assets/rainy-april-day-logo.png';
+import './standardPage.css';
 
 function withPageWrapper(WrappedComponent) {
   return function(props) {

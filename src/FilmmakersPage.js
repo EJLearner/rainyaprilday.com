@@ -1,18 +1,18 @@
-import React from "react";
+import React from 'react';
 
-import "./FilmmakersPage.css";
+import './FilmmakersPage.css';
 
-import withPageWrapper from "./withPageWrapper";
-import aprilHeadshot from "./assets/april-headshot.jpg";
-import jaiHeadshot from "./assets/jai-headshot.jpg";
-import sholaHeadshot from "./assets/shola-headshot.jpg";
-import Filmmaker from "./Filmmaker";
+import withPageWrapper from './withPageWrapper';
+import aprilHeadshot from './assets/april-headshot.jpg';
+import jaiHeadshot from './assets/jai-headshot.jpg';
+import sholaHeadshot from './assets/shola-headshot.jpg';
+import Filmmaker from './Filmmaker';
 
 function FilmmakersPage() {
   return (
     <div className="info-and-interviews">
       <div className="filmmakers-info">
-        <Filmmaker name="April Day" imageSource={aprilHeadshot}>
+        <Filmmaker imageSource={aprilHeadshot} name="April Day">
           <p>
             April Day is a screenwriter and producer born and raised in Baltimore, MD. April studied filmmaking at the
             University of Central Florida, graduating in 2004. Since then, she has been writing scripts spanning many
@@ -25,7 +25,7 @@ function FilmmakersPage() {
             create opportunities both in front of and behind the camera.
           </p>
         </Filmmaker>
-        <Filmmaker name="Shola Ajayi" imageSource={sholaHeadshot}>
+        <Filmmaker imageSource={sholaHeadshot} name="Shola Ajayi">
           <p>
             Olubusola M. Ajayi, “Shola”, is a part-time faculty member at The New School. Shola studied Photography and
             Screenwriting at the University of Central Florida and went on to pursue an MFA in Film Production at Boston
@@ -64,15 +64,15 @@ function FilmmakersPage() {
       </div>
       <div className="embedded-video">
         <iframe
-          src="https://player.vimeo.com/video/368597135"
-          width="400"
-          height="220"
-          frameborder="0"
           allow="autoplay; fullscreen"
-          webkitallowfullscreen="true"
-          mozallowfullscreen="true"
           allowfullscreen="true"
+          frameborder="0"
+          height="220"
+          mozallowfullscreen="true"
+          src="https://player.vimeo.com/video/368597135"
           title="Filmmakers Interview Video"
+          webkitallowfullscreen="true"
+          width="400"
         ></iframe>
         <div className="interviews-caption accent-text">Filmmaker Interviews</div>
       </div>
