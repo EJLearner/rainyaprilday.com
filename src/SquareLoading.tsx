@@ -19,15 +19,19 @@ class SquareLoading extends React.Component {
 
   render(): object {
     const {dotCount, showTimeout} = this.state;
-    const style = {'text-align': 'center'};
+    const style = {'font-size': '120%', 'margin-top': '75px', 'text-align': 'center'};
 
-    return (
-      <div style={style}>
-        {showTimeout
-          ? 'An error has occured please return to the site and try again'
-          : `Loading${'...'.substr(0, dotCount)}`}
-      </div>
-    );
+    let child = `Loading${'...'.substr(0, dotCount)}`;
+
+    if (showTimeout) {
+      child = (
+        <>
+          An error has occured please return to the <a href="donate">donate page</a> and try again.
+        </>
+      );
+    }
+
+    return <div style={style}>{child}</div>;
   }
 }
 
