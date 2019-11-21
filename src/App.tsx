@@ -9,6 +9,7 @@ import './App.css';
 import routePaths from './routePaths';
 import Donate from './Donate.tsx';
 import FilmmakersPage from './FilmmakersPage';
+import SquareLoading from './SquareLoading.tsx';
 import Synopsis from './Synopsis';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route component={Contact} path={routePaths.CONTACT} />
           <Route component={Donate} path={routePaths.DONATE} />
           <Route component={FilmmakersPage} path={routePaths.FILMMAKERS} />
+          <Route component={SquareLoading} path={routePaths.SQUARE_LOADING} />
           <Route component={Synopsis} path={routePaths.SYNOPSIS} />
 
           <Route component={MainPage} />

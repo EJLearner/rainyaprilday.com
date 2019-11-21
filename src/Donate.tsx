@@ -8,8 +8,8 @@ import superagent from 'superagent';
 const SELECT_AMOUNT_ID = 'select-amount';
 const ERROR_ID = 'error-message';
 
-const getUrl = (amount, event): Function => {
-  const newWindow = window.open();
+const openPageToSquareUrl = (amount, event): Function => {
+  const newWindow = window.open('square-loading');
   event.preventDefault();
 
   return superagent.post(`http://rainyaprildaylocal/square.php?amount=${amount}`).end((err: object, res: object) => {
@@ -49,7 +49,7 @@ class Donate extends React.Component {
     } else if (!otherAmount) {
       alert('No amount was entered');
     } else {
-      getUrl(otherAmount, event);
+      openPageToSquareUrl(otherAmount, event);
     }
   }
 
@@ -93,7 +93,7 @@ class Donate extends React.Component {
           className="set-amount-link"
           href="https://squareup.com/"
           key={amount}
-          onClick={(event): Function => getUrl(amount, event)}
+          onClick={(event): Function => openPageToSquareUrl(amount, event)}
           title={`Donate ${amountString}`}
         >
           {amountString}

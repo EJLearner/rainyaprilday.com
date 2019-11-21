@@ -1,10 +1,11 @@
 const routePaths = {
-  ABOUT_RADP: "/about-rainy-productions",
-  CONTACT: "/contact",
-  DONATE: "/donate",
-  FILMMAKERS: "/filmmakers",
-  MAIN: "/main",
-  SYNOPSIS: "/synopsis"
+  ABOUT_RADP: '/about-rainy-productions',
+  CONTACT: '/contact',
+  DONATE: '/donate',
+  FILMMAKERS: '/filmmakers',
+  MAIN: '/main',
+  SQUARE_LOADING: '/square-loading',
+  SYNOPSIS: '/synopsis'
 };
 
 export default routePaths;
