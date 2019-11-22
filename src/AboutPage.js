@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import "./AboutPage.css";
-import withPageWrapper from "./withPageWrapper";
+import './AboutPage.css';
+import withPageWrapper from './withPageWrapper';
 
 function AboutPage() {
   return (

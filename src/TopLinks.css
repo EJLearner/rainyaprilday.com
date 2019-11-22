@@ -1,5 +1,5 @@
 .top-links {
-  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
   text-transform: uppercase;
   justify-content: flex-end;
   margin: 32px 96px 32px 0;
@@ -16,7 +16,7 @@
 }
 
 .top-links div:not(:first-child)::before {
-  content: "/ ";
+  content: '/ ';
 }
 
 .top-links a:hover {

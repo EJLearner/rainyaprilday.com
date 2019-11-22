@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import "./Contact.css";
-import withPageWrapper from "./withPageWrapper";
+import './Contact.css';
+import withPageWrapper from './withPageWrapper';
 
 function Contact() {
   let instagramInfo;

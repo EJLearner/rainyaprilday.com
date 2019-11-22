@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import "./Synopsis.css";
-import withPageWrapper from "./withPageWrapper";
+import './Synopsis.css';
+import withPageWrapper from './withPageWrapper';
 
 function Synopsis() {
   return (
