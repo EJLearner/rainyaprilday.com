@@ -14,7 +14,7 @@ const openPageToSquareUrl = (amount, event): Function => {
   const newWindow = window.open('square-loading');
   event.preventDefault();
 
-  return superagent.post(`http://rainyaprildaylocal/square.php?amount=${amount}`).end((err: object, res: object) => {
+  return superagent.post(`square.php?amount=${amount}`).end((err: object, res: object) => {
     if (err) {
       this.setState({postError: err});
     }
