@@ -117,7 +117,7 @@ class Donate extends React.Component {
         <p className="donation-message">
           <span className="first-sentence">What am I donating to?</span>
           {NBSP}
-          {NBSP}The filmmakers are raising money to film the entire feature film <span className="title">Tipsy</span>.
+          {NBSP}The filmmakers are raising $50,000 to film the entire feature film <span className="title">Tipsy</span>.
           Shooting is scheduled to begin early October 2020 and wrap late November 2020. All donations will go toward
           pre-production, production, and post production costs associated with completing the feature film. Remaining
           proceeds will be used to cover entrance fees to various film festivals.
