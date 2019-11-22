@@ -1,6 +1,7 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import "./Filmmaker.css";
+import './Filmmaker.css';
 
 function Filmmaker(props) {
   return (
@@ -16,5 +17,11 @@ function Filmmaker(props) {
     </div>
   );
 }
+
+Filmmaker.propTypes = {
+  children: PropTypes.node.isRequired,
+  imageSource: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired
+};
 
 export default Filmmaker;
