@@ -1,4 +1,5 @@
 const routePaths = {
+  AFTER_DONATE_PAGE: '/thank-you',
   ABOUT_RADP: '/about-rainy-productions',
   CONTACT: '/contact',
   DONATE: '/donate',
